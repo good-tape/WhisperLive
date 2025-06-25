@@ -29,5 +29,6 @@ RUN pip install -r server.txt && rm server.txt
 COPY whisper_live /app/whisper_live
 
 COPY run_server.py /app
+# try to trigger build
 
 CMD ["python3", "run_server.py"]
